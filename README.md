@@ -3,7 +3,7 @@
 Run and inspect crypto trading bots, and backtest strategies on years of history, by talking to Claude (or any MCP client).
 
 - **Endpoint (Streamable HTTP):** `https://app.dearmastrader.com/api/mcp`
-- **Auth:** OAuth 2.1 with dynamic client registration and PKCE (discovery at `/.well-known/oauth-protected-resource`), or an API key in `X-API-Key` created in *My account → API keys*.
+- **Auth:** OAuth 2.1 with dynamic client registration and PKCE (discovery at `/.well-known/oauth-protected-resource`), or an API key pair in the `X-API-Key` and `X-Secret-Key` headers, created in *My account → API keys*.
 - **Website:** https://dearmastrader.com · **Free account:** https://app.dearmastrader.com
 - **Transport:** stateless Streamable HTTP, JSON responses. Protocol versions 2025-06-18, 2025-03-26, 2024-11-05.
 
@@ -33,7 +33,7 @@ Run and inspect crypto trading bots, and backtest strategies on years of history
 claude mcp add --transport http dearmastrader https://app.dearmastrader.com/api/mcp
 ```
 
-**Any MCP client with headers:** URL above plus `X-API-Key: <your key>`.
+**Any MCP client with headers:** URL above plus the headers `X-API-Key: <your key>` and `X-Secret-Key: <your secret>`.
 
 ## Example prompts
 
