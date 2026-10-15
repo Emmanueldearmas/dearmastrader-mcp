@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.dearmastrader/mcp",
+  "title": "DearmasTrader",
+  "description": "Crypto trading bots (DCA, grid) on Binance, Bybit, MEXC, OKX and Bitget, with a backtest lab.",
+  "version": "1.0.0",
+  "websiteUrl": "https://dearmastrader.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.dearmastrader.com/api/mcp"
+    }
+  ]
+}
